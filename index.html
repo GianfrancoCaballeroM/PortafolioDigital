@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gianfranco Caballero — Portafolio</title>
+  <meta name="description" content="Portafolio de Gianfranco Caballero Medina — Estudiante de Ingeniería Informática, desarrollador Fullstack orientado a Backend, seguridad e infraestructura." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>GCM<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#skills">Soft Skills</a></li>
+        <li><a href="#contact" class="nav-cta">Contacto</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <span class="tag-dot"></span>
+        Disponible para prácticas preprofesionales
+      </div>
+      <h1 class="hero-title reveal">
+        Hola, soy <br />
+        <span class="gradient-text">Gianfranco<br />Caballero</span>
+      </h1>
+      <div class="hero-typewriter reveal">
+        <span class="typewriter-prefix">$ </span>
+        <span id="typewriter"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-desc reveal">
+        Estudiante de Ingeniería Informática en la Universidad Ricardo Palma. 
+        Me especializo en diseñar sistemas seguros y modulares donde la arquitectura 
+        viene <em>antes</em> que el código.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contact" class="btn btn-ghost">Contactarme</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">01. Sobre mí</span>
+        <h2 class="section-title">Tech Lead antes<br />que implementador</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Mi perfil está orientado al <strong>Backend, infraestructura y seguridad</strong>. 
+            Lo que me diferencia es un flujo de trabajo híbrido: actúo como arquitecto tomando 
+            decisiones de diseño de alto nivel, y orquesto <strong>agentes de IA</strong> para 
+            acelerar la implementación de código limpio.
+          </p>
+          <p>
+            Trabajo bajo metodología <strong>Spec-Driven Development (SDD)</strong> —defino 
+            contratos OpenAPI, esquemas de base de datos y diagramas de flujo <em>antes</em> 
+            de codificar— porque el 70% de los bugs en producción vienen de la falta de 
+            planificación, no del código en sí.
+          </p>
+          <p>
+            Mi objetivo a largo plazo es la <strong>ciberseguridad</strong>: sistemas que resisten 
+            presión, no solo los que funcionan en condiciones ideales.
+          </p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-number">7+</span>
+            <span class="stat-label">Proyectos construidos</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">Stacks dominados</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">200k+</span>
+            <span class="stat-label">Registros procesados en IA</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">SDD</span>
+            <span class="stat-label">Metodología de diseño</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">02. Tech Stack</span>
+        <h2 class="section-title">Herramientas que<br />uso en producción</h2>
+      </div>
+
+      <div class="stack-grid">
+        <!-- Lenguajes -->
+        <div class="stack-category reveal">
+          <h3 class="category-title">
+            <span class="category-icon">💻</span> Lenguajes
+          </h3>
+          <div class="tech-tags">
+            <span class="tech-tag tier-1">JavaScript</span>
+            <span class="tech-tag tier-1">TypeScript</span>
+            <span class="tech-tag tier-1">Java</span>
+            <span class="tech-tag tier-1">Python</span>
+            <span class="tech-tag tier-2">C#</span>
+            <span class="tech-tag tier-2">SQL</span>
+            <span class="tech-tag tier-3">PHP</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="stack-category reveal">
+          <h3 class="category-title">
+            <span class="category-icon">⚙️</span> Backend & BaaS
+          </h3>
+          <div class="tech-tags">
+            <span class="tech-tag tier-1">Node.js</span>
+            <span class="tech-tag tier-1">Express.js</span>
+            <span class="tech-tag tier-1">FastAPI</span>
+            <span class="tech-tag tier-1">Firebase</span>
+            <span class="tech-tag tier-1">Supabase</span>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="stack-category reveal">
+          <h3 class="category-title">
+            <span class="category-icon">🎨</span> Frontend & UI
+          </h3>
+          <div class="tech-tags">
+            <span class="tech-tag tier-1">React</span>
+            <span class="tech-tag tier-1">Vite</span>
+            <span class="tech-tag tier-1">Tailwind CSS</span>
+            <span class="tech-tag tier-2">Framer Motion</span>
+            <span class="tech-tag tier-2">Recharts</span>
+            <span class="tech-tag tier-2">FastHTML</span>
+          </div>
+        </div>
+
+        <!-- Bases de datos -->
+        <div class="stack-category reveal">
+          <h3 class="category-title">
+            <span class="category-icon">🗄️</span> Bases de Datos
+          </h3>
+          <div class="tech-tags">
+            <span class="tech-tag tier-1">PostgreSQL</span>
+            <span class="tech-tag tier-1">SQL Server</span>
+            <span class="tech-tag tier-1">MongoDB</span>
+            <span class="tech-tag tier-2">Firebase Firestore</span>
+            <span class="tech-tag tier-2">Oracle DB</span>
+            <span class="tech-tag tier-2">DBeaver</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="stack-category reveal">
+          <h3 class="category-title">
+            <span class="category-icon">🛠️</span> Deploy & Herramientas
+          </h3>
+          <div class="tech-tags">
+            <span class="tech-tag tier-1">Git / GitHub</span>
+            <span class="tech-tag tier-1">Vercel</span>
+            <span class="tech-tag tier-1">Railway</span>
+            <span class="tech-tag tier-2">Cloudinary</span>
+            <span class="tech-tag tier-2">Resend API</span>
+            <span class="tech-tag tier-3">UiPath (RPA)</span>
+          </div>
+        </div>
+
+        <!-- Metodologías -->
+        <div class="stack-category reveal">
+          <h3 class="category-title">
+            <span class="category-icon">📐</span> Metodologías
+          </h3>
+          <div class="tech-tags">
+            <span class="tech-tag tier-1">Spec-Driven Dev</span>
+            <span class="tech-tag tier-1">OpenAPI 3.x</span>
+            <span class="tech-tag tier-1">Clean Architecture</span>
+            <span class="tech-tag tier-2">SCRUM / Kanban</span>
+            <span class="tech-tag tier-2">Nielsen Heuristics</span>
+            <span class="tech-tag tier-2">RBAC</span>
+          </div>
+        </div>
+      </div>
+      <div class="stack-legend reveal">
+        <span class="legend-item"><span class="dot tier-1"></span> Dominado</span>
+        <span class="legend-item"><span class="dot tier-2"></span> Intermedio</span>
+        <span class="legend-item"><span class="dot tier-3"></span> Básico / Académico</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">03. Proyectos</span>
+        <h2 class="section-title">Lo que construí<br />en producción real</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Mezzanine PERN -->
+        <div class="project-card featured reveal">
+          <div class="project-badge">⭐ Featured</div>
+          <div class="project-header">
+            <span class="project-icon">🍽️</span>
+            <div class="project-meta">
+              <span class="project-context">Sistemas de Información Empresarial II</span>
+              <span class="project-role">Tech Lead & Desarrollador Principal</span>
+            </div>
+          </div>
+          <h3 class="project-title">Mezzanine Restobar</h3>
+          <p class="project-desc">
+            Plataforma empresarial completa para un restaurante criollo limeño: landing page pública con SEO técnico + dashboard CRM/ERP administrativo. 2 meses de desarrollo intensivo.
+          </p>
+          <ul class="project-highlights">
+            <li>SEO técnico nativo: react-helmet-async, sitemaps dinámicos, Google Search Console.</li>
+            <li>CRUD de menú integrado con Cloudinary para gestión de imágenes.</li>
+            <li>Módulos de RRHH, LTV de clientes y Libro de Reclamaciones con cumplimiento legal peruano.</li>
+            <li>Deploy full: PostgreSQL (Supabase) → Express (Railway) → React (Vercel).</li>
+          </ul>
+          <div class="project-tags">
+            <span>PostgreSQL</span><span>Express.js</span><span>React</span>
+            <span>Vite</span><span>Tailwind</span><span>Cloudinary</span><span>Supabase</span>
+          </div>
+        </div>
+
+        <!-- DUXCalc -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-icon">💼</span>
+            <div class="project-meta">
+              <span class="project-context">Proyecto multidisciplinario (Tesis 10.° ciclo)</span>
+              <span class="project-role">Frontend Dev & UI-UX Contributor</span>
+            </div>
+          </div>
+          <h3 class="project-title">DUXCalc Payroll System</h3>
+          <p class="project-desc">
+            Sistema de nómina y gestión de campañas para un Contact Center real. Implementé la capa de seguridad de autenticación y la refactorización completa de UI.
+          </p>
+          <ul class="project-highlights">
+            <li>Flujo de recuperación de contraseña con OTP, bcrypt, rate limiting anti brute-force.</li>
+            <li>Refactorización UI aplicando <strong>Heurísticas de Nielsen</strong> para mejorar usabilidad.</li>
+            <li>Cloudflare Turnstile en login + Firebase Storage para imágenes.</li>
+          </ul>
+          <div class="project-tags">
+            <span>React</span><span>Node.js</span><span>Firebase</span><span>Nodemailer</span>
+          </div>
+        </div>
+
+        <!-- Kanbix -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-icon">🗂️</span>
+            <div class="project-meta">
+              <span class="project-context">Arquitectura y Evolución de Software</span>
+              <span class="project-role">Fullstack Developer</span>
+            </div>
+          </div>
+          <h3 class="project-title">Kanbix</h3>
+          <p class="project-desc">
+            Plataforma colaborativa de gestión de proyectos bajo Kanban y SCRUM para equipos universitarios. Diseñado 100% bajo Spec-Driven Development.
+          </p>
+          <ul class="project-highlights">
+            <li>84 requisitos funcionales, 22 CUS y matriz de trazabilidad antes de codificar.</li>
+            <li>Backend bajo <strong>Clean Architecture</strong> con FastAPI y MongoDB.</li>
+            <li>Contratos API en OpenAPI 3.x con validación automática vía Pydantic.</li>
+          </ul>
+          <div class="project-tags">
+            <span>TypeScript</span><span>React</span><span>FastAPI</span><span>MongoDB</span>
+          </div>
+        </div>
+
+        <!-- Mezzanine MERN NoSQL -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-icon">🍽️</span>
+            <div class="project-meta">
+              <span class="project-context">Bases de Datos II</span>
+              <span class="project-role">Desarrollador Backend / DB</span>
+            </div>
+          </div>
+          <h3 class="project-title">Mezzanine Reservas <span class="project-subtitle">(NoSQL)</span></h3>
+          <p class="project-desc">
+            Prototipo backend con MERN stack enfocado en features avanzadas de MongoDB: construido para demostrar el dominio de la base de datos documental.
+          </p>
+          <ul class="project-highlights">
+            <li><strong>Capped Collection</strong> (1MB, max 1000 docs) para logs de auditoría de alto rendimiento + TTL de 30 días.</li>
+            <li><strong>Vista nativa</strong> <code>v_reservas_hoy</code> con pipeline de fechas UTC dinámico.</li>
+            <li>Triggers Mongoose (post-save y post-findOneAndUpdate) + pipelines de agregación por horas.</li>
+          </ul>
+          <div class="project-tags">
+            <span>MongoDB Atlas</span><span>Mongoose</span><span>Express.js</span><span>React</span>
+          </div>
+        </div>
+
+        <!-- NeuroScan ID -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-icon">🧠</span>
+            <div class="project-meta">
+              <span class="project-context">Proyecto para terceros (IBM-backed)</span>
+              <span class="project-role">Desarrollador Frontend</span>
+            </div>
+          </div>
+          <h3 class="project-title">NeuroScan ID</h3>
+          <p class="project-desc">
+            Landing B2B para un producto conceptual de análisis psicoemocional. Demo interactiva con envío de correos en vivo durante la presentación.
+          </p>
+          <ul class="project-highlights">
+            <li><strong>Resend API</strong> integrada para captar leads con correos institucionales en tiempo real.</li>
+            <li>Animaciones fluidas y UI futurista con <strong>Framer Motion</strong>.</li>
+            <li>Deployada en Vercel con autenticación de formularios vía Supabase.</li>
+          </ul>
+          <div class="project-tags">
+            <span>React</span><span>Framer Motion</span><span>Supabase</span><span>Resend API</span>
+          </div>
+        </div>
+
+        <!-- SNP IA -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-icon">🎛️</span>
+            <div class="project-meta">
+              <span class="project-context">Inteligencia Artificial (curso)</span>
+              <span class="project-role">Desarrollador Python / ML</span>
+            </div>
+          </div>
+          <h3 class="project-title">Proyecto IA — SNP Perú</h3>
+          <p class="project-desc">
+            Pipeline predictivo sobre +200k registros de pensiones peruanas (SNP) para clasificar y predecir aportes, con interfaz web servida en Python.
+          </p>
+          <ul class="project-highlights">
+            <li>Modelos no lineales: Gradient Boosting, SVM-RBF y MLP entrenados en Google Colab.</li>
+            <li>Backend en <strong>FastAPI</strong> + interfaz web en <strong>FastHTML</strong> para consumo del modelo.</li>
+          </ul>
+          <div class="project-tags">
+            <span>Python</span><span>FastAPI</span><span>FastHTML</span><span>Scikit-learn</span><span>Pandas</span>
+          </div>
+        </div>
+
+        <!-- StudyPlan -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-icon">🎓</span>
+            <div class="project-meta">
+              <span class="project-context">Proyecto Personal</span>
+              <span class="project-role">Desarrollador Individual</span>
+            </div>
+          </div>
+          <h3 class="project-title">StudyPlan</h3>
+          <p class="project-desc">
+            Dashboard de productividad académica que convierte planes de estudio en Markdown a tareas interactivas con countdown. Hecho en un día de sprint.
+          </p>
+          <ul class="project-highlights">
+            <li>Parser personalizado de Markdown en frontend que estructura los datos en tareas priorizadas.</li>
+            <li>Auth y persistencia con Supabase; rutas protegidas con ProtectedRoute.</li>
+          </ul>
+          <div class="project-tags">
+            <span>React</span><span>Supabase</span><span>Tailwind CSS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOFT SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">04. Enfoque de Ingeniería</span>
+        <h2 class="section-title">Cómo pienso<br />antes de codificar</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">🤖</div>
+          <h3>AI-Orchestrated Workflow</h3>
+          <p>Delego la implementación repetitiva en agentes de IA y me concentro en arquitectura, modelado de datos y decisiones de seguridad críticas.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">📐</div>
+          <h3>Spec-Driven Development</h3>
+          <p>Diseño contratos OpenAPI, flujos BPMN y matrices de trazabilidad antes de escribir una sola línea de código de negocio.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🔐</div>
+          <h3>Security by Design</h3>
+          <p>Integro RBAC, rate-limiting, bcrypt y mitigación de brute-force desde el diseño, no como un afterthought al final del sprint.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🎨</div>
+          <h3>UI/UX — Nielsen's Heuristics</h3>
+          <p>Evalúo y refactorizo interfaces aplicando heurísticas de usabilidad para garantizar consistencia, feedback inmediato y control del usuario.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">⚡</div>
+          <h3>Alta Adaptabilidad Técnica</h3>
+          <p>En un mismo semestre pivoto entre Python/FastAPI para IA, MongoDB para arquitectura limpia, y Node/Express para sistemas de cliente real.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">📄</div>
+          <h3>Documentación como Disciplina</h3>
+          <p>No solo implemento: genero CUS, OpenAPI specs, READMEs técnicos y documentos de memoria como entregables reales y trazables.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrapper reveal">
+        <div class="contact-text">
+          <span class="section-label">05. Contacto</span>
+          <h2 class="section-title">¿Hablamos?</h2>
+          <p>Estoy buscando prácticas preprofesionales en desarrollo backend, infraestructura o ciberseguridad. Si tenés un proyecto interesante o querés conocer más de mi trabajo, escribime.</p>
+          <div class="contact-links">
+            <a href="mailto:gianfrancocaballeromedina@hotmail.com" class="contact-link" id="link-email">
+              <span class="contact-link-icon">✉️</span>
+              <span>gianfrancocaballeromedina@hotmail.com</span>
+            </a>
+            <a href="https://github.com/Pacomer3344" target="_blank" rel="noopener" class="contact-link" id="link-github">
+              <span class="contact-link-icon">🐙</span>
+              <span>github.com/Pacomer3344</span>
+            </a>
+            <a href="https://www.linkedin.com/in/gianfranco-caballero-medina-a7bab13b1/" target="_blank" rel="noopener" class="contact-link" id="link-linkedin">
+              <span class="contact-link-icon">💼</span>
+              <span>linkedin.com/in/gianfranco-caballero-medina</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-cta">
+          <a href="mailto:gianfrancocaballeromedina@hotmail.com" class="btn btn-primary btn-lg" id="cta-email">Escribime ahora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>
+        Diseñado y construido por <strong>Gianfranco Caballero Medina</strong> · 
+        <span class="footer-mono">HTML · CSS · JavaScript</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
