@@ -3,483 +3,710 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gianfranco Caballero — Portafolio</title>
-  <meta name="description" content="Portafolio de Gianfranco Caballero Medina — Estudiante de Ingeniería Informática, desarrollador Fullstack orientado a Backend, seguridad e infraestructura." />
+  <title>Gianfranco Caballero Medina — Portafolio de Ingeniería & Software</title>
+  <meta name="description" content="Portafolio profesional de Gianfranco Caballero Medina — Estudiante de Ingeniería Informática en URP, Fullstack Developer, Arquitectura Limpia y QA Automation." />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gianfranco Caballero Medina — Portafolio de Ingeniería" />
+  <meta property="og:description" content="Fullstack Software Developer · Clean Architecture · QA Automation · URP" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">
-        <span class="logo-bracket">&lt;</span>GCM<span class="logo-bracket">/&gt;</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#stack">Stack</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#skills">Soft Skills</a></li>
-        <li><a href="#contact" class="nav-cta">Contacto</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+  <!-- NAVBAR -->
+  <header id="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-brand">
+          <span class="brand-text">Gianfranco Caballero</span>
+          <span class="brand-badge">ING</span>
+        </a>
 
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-bg">
-      <div class="hero-grid"></div>
-      <div class="hero-orb orb-1"></div>
-      <div class="hero-orb orb-2"></div>
-      <div class="hero-orb orb-3"></div>
-    </div>
-    <div class="hero-content">
-      <div class="hero-tag reveal">
-        <span class="tag-dot"></span>
-        Disponible para prácticas preprofesionales
-      </div>
-      <h1 class="hero-title reveal">
-        Hola, soy <br />
-        <span class="gradient-text">Gianfranco<br />Caballero</span>
-      </h1>
-      <div class="hero-typewriter reveal">
-        <span class="typewriter-prefix">$ </span>
-        <span id="typewriter"></span>
-        <span class="cursor">|</span>
-      </div>
-      <p class="hero-desc reveal">
-        Estudiante de Ingeniería Informática en la Universidad Ricardo Palma. 
-        Me especializo en diseñar sistemas seguros y modulares donde la arquitectura 
-        viene <em>antes</em> que el código.
-      </p>
-      <div class="hero-actions reveal">
-        <a href="#projects" class="btn btn-primary">Ver proyectos</a>
-        <a href="#contact" class="btn btn-ghost">Contactarme</a>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <div class="scroll-indicator">
-        <div class="scroll-dot"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">01. Sobre mí</span>
-        <h2 class="section-title">Tech Lead antes<br />que implementador</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p>
-            Mi perfil está orientado al <strong>Backend, infraestructura y seguridad</strong>. 
-            Lo que me diferencia es un flujo de trabajo híbrido: actúo como arquitecto tomando 
-            decisiones de diseño de alto nivel, y orquesto <strong>agentes de IA</strong> para 
-            acelerar la implementación de código limpio.
-          </p>
-          <p>
-            Trabajo bajo metodología <strong>Spec-Driven Development (SDD)</strong> —defino 
-            contratos OpenAPI, esquemas de base de datos y diagramas de flujo <em>antes</em> 
-            de codificar— porque el 70% de los bugs en producción vienen de la falta de 
-            planificación, no del código en sí.
-          </p>
-          <p>
-            Mi objetivo a largo plazo es la <strong>ciberseguridad</strong>: sistemas que resisten 
-            presión, no solo los que funcionan en condiciones ideales.
-          </p>
-        </div>
-        <div class="about-stats reveal">
-          <div class="stat-card">
-            <span class="stat-number">7+</span>
-            <span class="stat-label">Proyectos construidos</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">4+</span>
-            <span class="stat-label">Stacks dominados</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">200k+</span>
-            <span class="stat-label">Registros procesados en IA</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">SDD</span>
-            <span class="stat-label">Metodología de diseño</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- STACK -->
-  <section id="stack">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">02. Tech Stack</span>
-        <h2 class="section-title">Herramientas que<br />uso en producción</h2>
-      </div>
-
-      <div class="stack-grid">
-        <!-- Lenguajes -->
-        <div class="stack-category reveal">
-          <h3 class="category-title">
-            <span class="category-icon">💻</span> Lenguajes
-          </h3>
-          <div class="tech-tags">
-            <span class="tech-tag tier-1">JavaScript</span>
-            <span class="tech-tag tier-1">TypeScript</span>
-            <span class="tech-tag tier-1">Java</span>
-            <span class="tech-tag tier-1">Python</span>
-            <span class="tech-tag tier-2">C#</span>
-            <span class="tech-tag tier-2">SQL</span>
-            <span class="tech-tag tier-3">PHP</span>
-          </div>
-        </div>
-
-        <!-- Backend -->
-        <div class="stack-category reveal">
-          <h3 class="category-title">
-            <span class="category-icon">⚙️</span> Backend & BaaS
-          </h3>
-          <div class="tech-tags">
-            <span class="tech-tag tier-1">Node.js</span>
-            <span class="tech-tag tier-1">Express.js</span>
-            <span class="tech-tag tier-1">FastAPI</span>
-            <span class="tech-tag tier-1">Firebase</span>
-            <span class="tech-tag tier-1">Supabase</span>
-          </div>
-        </div>
-
-        <!-- Frontend -->
-        <div class="stack-category reveal">
-          <h3 class="category-title">
-            <span class="category-icon">🎨</span> Frontend & UI
-          </h3>
-          <div class="tech-tags">
-            <span class="tech-tag tier-1">React</span>
-            <span class="tech-tag tier-1">Vite</span>
-            <span class="tech-tag tier-1">Tailwind CSS</span>
-            <span class="tech-tag tier-2">Framer Motion</span>
-            <span class="tech-tag tier-2">Recharts</span>
-            <span class="tech-tag tier-2">FastHTML</span>
-          </div>
-        </div>
-
-        <!-- Bases de datos -->
-        <div class="stack-category reveal">
-          <h3 class="category-title">
-            <span class="category-icon">🗄️</span> Bases de Datos
-          </h3>
-          <div class="tech-tags">
-            <span class="tech-tag tier-1">PostgreSQL</span>
-            <span class="tech-tag tier-1">SQL Server</span>
-            <span class="tech-tag tier-1">MongoDB</span>
-            <span class="tech-tag tier-2">Firebase Firestore</span>
-            <span class="tech-tag tier-2">Oracle DB</span>
-            <span class="tech-tag tier-2">DBeaver</span>
-          </div>
-        </div>
-
-        <!-- Tools -->
-        <div class="stack-category reveal">
-          <h3 class="category-title">
-            <span class="category-icon">🛠️</span> Deploy & Herramientas
-          </h3>
-          <div class="tech-tags">
-            <span class="tech-tag tier-1">Git / GitHub</span>
-            <span class="tech-tag tier-1">Vercel</span>
-            <span class="tech-tag tier-1">Railway</span>
-            <span class="tech-tag tier-2">Cloudinary</span>
-            <span class="tech-tag tier-2">Resend API</span>
-            <span class="tech-tag tier-3">UiPath (RPA)</span>
-          </div>
-        </div>
-
-        <!-- Metodologías -->
-        <div class="stack-category reveal">
-          <h3 class="category-title">
-            <span class="category-icon">📐</span> Metodologías
-          </h3>
-          <div class="tech-tags">
-            <span class="tech-tag tier-1">Spec-Driven Dev</span>
-            <span class="tech-tag tier-1">OpenAPI 3.x</span>
-            <span class="tech-tag tier-1">Clean Architecture</span>
-            <span class="tech-tag tier-2">SCRUM / Kanban</span>
-            <span class="tech-tag tier-2">Nielsen Heuristics</span>
-            <span class="tech-tag tier-2">RBAC</span>
-          </div>
-        </div>
-      </div>
-      <div class="stack-legend reveal">
-        <span class="legend-item"><span class="dot tier-1"></span> Dominado</span>
-        <span class="legend-item"><span class="dot tier-2"></span> Intermedio</span>
-        <span class="legend-item"><span class="dot tier-3"></span> Básico / Académico</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">03. Proyectos</span>
-        <h2 class="section-title">Lo que construí<br />en producción real</h2>
-      </div>
-
-      <div class="projects-grid">
-
-        <!-- Mezzanine PERN -->
-        <div class="project-card featured reveal">
-          <div class="project-badge">⭐ Featured</div>
-          <div class="project-header">
-            <span class="project-icon">🍽️</span>
-            <div class="project-meta">
-              <span class="project-context">Sistemas de Información Empresarial II</span>
-              <span class="project-role">Tech Lead & Desarrollador Principal</span>
-            </div>
-          </div>
-          <h3 class="project-title">Mezzanine Restobar</h3>
-          <p class="project-desc">
-            Plataforma empresarial completa para un restaurante criollo limeño: landing page pública con SEO técnico + dashboard CRM/ERP administrativo. 2 meses de desarrollo intensivo.
-          </p>
-          <ul class="project-highlights">
-            <li>SEO técnico nativo: react-helmet-async, sitemaps dinámicos, Google Search Console.</li>
-            <li>CRUD de menú integrado con Cloudinary para gestión de imágenes.</li>
-            <li>Módulos de RRHH, LTV de clientes y Libro de Reclamaciones con cumplimiento legal peruano.</li>
-            <li>Deploy full: PostgreSQL (Supabase) → Express (Railway) → React (Vercel).</li>
+        <div class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li><a href="#about" class="nav-link">Sobre mí</a></li>
+            <li><a href="#projects" class="nav-link">Proyectos</a></li>
+            <li><a href="#stack" class="nav-link">Stack</a></li>
+            <li><a href="#principles" class="nav-link">Principios</a></li>
+            <li><a href="#certifications" class="nav-link">Certificaciones</a></li>
           </ul>
-          <div class="project-tags">
-            <span>PostgreSQL</span><span>Express.js</span><span>React</span>
-            <span>Vite</span><span>Tailwind</span><span>Cloudinary</span><span>Supabase</span>
-          </div>
-        </div>
-
-        <!-- DUXCalc -->
-        <div class="project-card reveal">
-          <div class="project-header">
-            <span class="project-icon">💼</span>
-            <div class="project-meta">
-              <span class="project-context">Proyecto multidisciplinario (Tesis 10.° ciclo)</span>
-              <span class="project-role">Frontend Dev & UI-UX Contributor</span>
-            </div>
-          </div>
-          <h3 class="project-title">DUXCalc Payroll System</h3>
-          <p class="project-desc">
-            Sistema de nómina y gestión de campañas para un Contact Center real. Implementé la capa de seguridad de autenticación y la refactorización completa de UI.
-          </p>
-          <ul class="project-highlights">
-            <li>Flujo de recuperación de contraseña con OTP, bcrypt, rate limiting anti brute-force.</li>
-            <li>Refactorización UI aplicando <strong>Heurísticas de Nielsen</strong> para mejorar usabilidad.</li>
-            <li>Cloudflare Turnstile en login + Firebase Storage para imágenes.</li>
-          </ul>
-          <div class="project-tags">
-            <span>React</span><span>Node.js</span><span>Firebase</span><span>Nodemailer</span>
-          </div>
-        </div>
-
-        <!-- Kanbix -->
-        <div class="project-card reveal">
-          <div class="project-header">
-            <span class="project-icon">🗂️</span>
-            <div class="project-meta">
-              <span class="project-context">Arquitectura y Evolución de Software</span>
-              <span class="project-role">Fullstack Developer</span>
-            </div>
-          </div>
-          <h3 class="project-title">Kanbix</h3>
-          <p class="project-desc">
-            Plataforma colaborativa de gestión de proyectos bajo Kanban y SCRUM para equipos universitarios. Diseñado 100% bajo Spec-Driven Development.
-          </p>
-          <ul class="project-highlights">
-            <li>84 requisitos funcionales, 22 CUS y matriz de trazabilidad antes de codificar.</li>
-            <li>Backend bajo <strong>Clean Architecture</strong> con FastAPI y MongoDB.</li>
-            <li>Contratos API en OpenAPI 3.x con validación automática vía Pydantic.</li>
-          </ul>
-          <div class="project-tags">
-            <span>TypeScript</span><span>React</span><span>FastAPI</span><span>MongoDB</span>
-          </div>
-        </div>
-
-        <!-- Mezzanine MERN NoSQL -->
-        <div class="project-card reveal">
-          <div class="project-header">
-            <span class="project-icon">🍽️</span>
-            <div class="project-meta">
-              <span class="project-context">Bases de Datos II</span>
-              <span class="project-role">Desarrollador Backend / DB</span>
-            </div>
-          </div>
-          <h3 class="project-title">Mezzanine Reservas <span class="project-subtitle">(NoSQL)</span></h3>
-          <p class="project-desc">
-            Prototipo backend con MERN stack enfocado en features avanzadas de MongoDB: construido para demostrar el dominio de la base de datos documental.
-          </p>
-          <ul class="project-highlights">
-            <li><strong>Capped Collection</strong> (1MB, max 1000 docs) para logs de auditoría de alto rendimiento + TTL de 30 días.</li>
-            <li><strong>Vista nativa</strong> <code>v_reservas_hoy</code> con pipeline de fechas UTC dinámico.</li>
-            <li>Triggers Mongoose (post-save y post-findOneAndUpdate) + pipelines de agregación por horas.</li>
-          </ul>
-          <div class="project-tags">
-            <span>MongoDB Atlas</span><span>Mongoose</span><span>Express.js</span><span>React</span>
-          </div>
-        </div>
-
-        <!-- NeuroScan ID -->
-        <div class="project-card reveal">
-          <div class="project-header">
-            <span class="project-icon">🧠</span>
-            <div class="project-meta">
-              <span class="project-context">Proyecto para terceros (IBM-backed)</span>
-              <span class="project-role">Desarrollador Frontend</span>
-            </div>
-          </div>
-          <h3 class="project-title">NeuroScan ID</h3>
-          <p class="project-desc">
-            Landing B2B para un producto conceptual de análisis psicoemocional. Demo interactiva con envío de correos en vivo durante la presentación.
-          </p>
-          <ul class="project-highlights">
-            <li><strong>Resend API</strong> integrada para captar leads con correos institucionales en tiempo real.</li>
-            <li>Animaciones fluidas y UI futurista con <strong>Framer Motion</strong>.</li>
-            <li>Deployada en Vercel con autenticación de formularios vía Supabase.</li>
-          </ul>
-          <div class="project-tags">
-            <span>React</span><span>Framer Motion</span><span>Supabase</span><span>Resend API</span>
-          </div>
-        </div>
-
-        <!-- SNP IA -->
-        <div class="project-card reveal">
-          <div class="project-header">
-            <span class="project-icon">🎛️</span>
-            <div class="project-meta">
-              <span class="project-context">Inteligencia Artificial (curso)</span>
-              <span class="project-role">Desarrollador Python / ML</span>
-            </div>
-          </div>
-          <h3 class="project-title">Proyecto IA — SNP Perú</h3>
-          <p class="project-desc">
-            Pipeline predictivo sobre +200k registros de pensiones peruanas (SNP) para clasificar y predecir aportes, con interfaz web servida en Python.
-          </p>
-          <ul class="project-highlights">
-            <li>Modelos no lineales: Gradient Boosting, SVM-RBF y MLP entrenados en Google Colab.</li>
-            <li>Backend en <strong>FastAPI</strong> + interfaz web en <strong>FastHTML</strong> para consumo del modelo.</li>
-          </ul>
-          <div class="project-tags">
-            <span>Python</span><span>FastAPI</span><span>FastHTML</span><span>Scikit-learn</span><span>Pandas</span>
-          </div>
-        </div>
-
-        <!-- StudyPlan -->
-        <div class="project-card reveal">
-          <div class="project-header">
-            <span class="project-icon">🎓</span>
-            <div class="project-meta">
-              <span class="project-context">Proyecto Personal</span>
-              <span class="project-role">Desarrollador Individual</span>
-            </div>
-          </div>
-          <h3 class="project-title">StudyPlan</h3>
-          <p class="project-desc">
-            Dashboard de productividad académica que convierte planes de estudio en Markdown a tareas interactivas con countdown. Hecho en un día de sprint.
-          </p>
-          <ul class="project-highlights">
-            <li>Parser personalizado de Markdown en frontend que estructura los datos en tareas priorizadas.</li>
-            <li>Auth y persistencia con Supabase; rutas protegidas con ProtectedRoute.</li>
-          </ul>
-          <div class="project-tags">
-            <span>React</span><span>Supabase</span><span>Tailwind CSS</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- SOFT SKILLS -->
-  <section id="skills">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">04. Enfoque de Ingeniería</span>
-        <h2 class="section-title">Cómo pienso<br />antes de codificar</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <div class="skill-icon">🤖</div>
-          <h3>AI-Orchestrated Workflow</h3>
-          <p>Delego la implementación repetitiva en agentes de IA y me concentro en arquitectura, modelado de datos y decisiones de seguridad críticas.</p>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">📐</div>
-          <h3>Spec-Driven Development</h3>
-          <p>Diseño contratos OpenAPI, flujos BPMN y matrices de trazabilidad antes de escribir una sola línea de código de negocio.</p>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">🔐</div>
-          <h3>Security by Design</h3>
-          <p>Integro RBAC, rate-limiting, bcrypt y mitigación de brute-force desde el diseño, no como un afterthought al final del sprint.</p>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">🎨</div>
-          <h3>UI/UX — Nielsen's Heuristics</h3>
-          <p>Evalúo y refactorizo interfaces aplicando heurísticas de usabilidad para garantizar consistencia, feedback inmediato y control del usuario.</p>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">⚡</div>
-          <h3>Alta Adaptabilidad Técnica</h3>
-          <p>En un mismo semestre pivoto entre Python/FastAPI para IA, MongoDB para arquitectura limpia, y Node/Express para sistemas de cliente real.</p>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">📄</div>
-          <h3>Documentación como Disciplina</h3>
-          <p>No solo implemento: genero CUS, OpenAPI specs, READMEs técnicos y documentos de memoria como entregables reales y trazables.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-      <div class="contact-wrapper reveal">
-        <div class="contact-text">
-          <span class="section-label">05. Contacto</span>
-          <h2 class="section-title">¿Hablamos?</h2>
-          <p>Estoy buscando prácticas preprofesionales en desarrollo backend, infraestructura o ciberseguridad. Si tenés un proyecto interesante o querés conocer más de mi trabajo, escribime.</p>
-          <div class="contact-links">
-            <a href="mailto:gianfrancocaballeromedina@hotmail.com" class="contact-link" id="link-email">
-              <span class="contact-link-icon">✉️</span>
-              <span>gianfrancocaballeromedina@hotmail.com</span>
+          <div class="nav-actions">
+            <a href="https://github.com/GianfrancoCaballeroM" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" id="nav-btn-github">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
             </a>
-            <a href="https://github.com/Pacomer3344" target="_blank" rel="noopener" class="contact-link" id="link-github">
-              <span class="contact-link-icon">🐙</span>
-              <span>github.com/Pacomer3344</span>
+            <a href="#contact" class="btn btn-sm btn-primary">Contacto</a>
+          </div>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-glow"></div>
+      <div class="container hero-container">
+        
+        <div class="hero-header">
+          <div class="status-pill">
+            <span class="status-indicator"></span>
+            <span>Disponible para Prácticas Preprofesionales & Proyectos</span>
+          </div>
+
+          <h1 class="hero-title">
+            Diseño arquitecturas limpias y software de <span class="text-accent">alto impacto</span>.
+          </h1>
+
+          <p class="hero-lead">
+            Estudiante de Ingeniería Informática en la <strong>Universidad Ricardo Palma</strong>. 
+            Fullstack Software Developer y QA con enfoque en sistemas modulares, especificaciones 
+            <strong>OpenAPI</strong> y metodologías <strong>Spec-Driven Development (SDD)</strong> antes de codificar.
+          </p>
+
+          <div class="hero-credentials">
+            <span class="cred-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              URP · Ingeniería Informática
+            </span>
+            <span class="cred-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24M14.83 14.83l4.24 4.24M14.83 9.17l4.24-4.24M4.93 19.07l4.24-4.24"/></svg>
+              EF SET Inglés C1 Avanzado (62/100)
+            </span>
+            <span class="cred-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Lima, Perú
+            </span>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-lg" id="hero-btn-projects">
+              Explorar Proyectos
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="https://www.linkedin.com/in/gianfranco-caballero-medina-a7bab13b1/" target="_blank" rel="noopener" class="contact-link" id="link-linkedin">
-              <span class="contact-link-icon">💼</span>
-              <span>linkedin.com/in/gianfranco-caballero-medina</span>
+            <a href="https://github.com/GianfrancoCaballeroM" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg" id="hero-btn-gh">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub Perfil
+            </a>
+            <a href="https://www.linkedin.com/in/gianfranco-caballero-medina-62459643a/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg" id="hero-btn-linkedin">
+              LinkedIn
             </a>
           </div>
         </div>
-        <div class="contact-cta">
-          <a href="mailto:gianfrancocaballeromedina@hotmail.com" class="btn btn-primary btn-lg" id="cta-email">Escribime ahora</a>
+
+        <!-- METRICS STRIP -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <span class="metric-value">+500</span>
+            <span class="metric-label">Usuarios en Producción</span>
+            <span class="metric-detail">Sistema Registro Panetones URP</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">8</span>
+            <span class="metric-label">Sistemas y Arquitecturas</span>
+            <span class="metric-detail">Fullstack, NoSQL, QA & ML</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">C1</span>
+            <span class="metric-label">Inglés Avanzado</span>
+            <span class="metric-detail">Certificado EF SET (62/100)</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">0%</span>
+            <span class="metric-label">Error de Transcripción</span>
+            <span class="metric-detail">Digitalización integral de procesos</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section border-top">
+      <div class="container">
+        <div class="section-badge">Sobre mí</div>
+        <h2 class="section-title">Ingeniería rigurosa antes que código impulsivo</h2>
+        
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Me formé en <strong>Ingeniería Informática</strong> en la Universidad Ricardo Palma con una convicción clara: 
+              el mejor software no es el que se escribe más rápido, sino el que se diseña con bases sólidas para que no falle en producción.
+            </p>
+            <p>
+              Mi metodología de trabajo implementa un modelo híbrido: actúo como <strong>Tech Lead y Arquitecto de decisiones</strong>, 
+              definiendo esquemas relacionales, contratos de API bajo OpenAPI 3.x, matrices de trazabilidad y modelos de seguridad 
+              (RBAC, mitigación de fuerza bruta, hashing) antes de la implementación. Orquesto herramientas automatizadas y agentes de IA 
+              para acelerar la entrega sin comprometer la disciplina técnica.
+            </p>
+            <p>
+              Tengo experiencia práctica desplegando aplicaciones a usuarios reales, optimizando bases de datos (PostgreSQL, Supabase, 
+              MongoDB Atlas con índices TTL y capped collections) y automatizando suites de pruebas completas con Katalon Studio y Postman.
+            </p>
+          </div>
+
+          <div class="about-cards">
+            <div class="highlight-card">
+              <div class="highlight-icon">🏗️</div>
+              <div>
+                <h3>Clean Architecture & SDD</h3>
+                <p>Separación estricta de responsabilidades (Controladores, Casos de Uso, Repositorios y Entidades de Dominio).</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">🧪</div>
+              <div>
+                <h3>QA & Test Automation</h3>
+                <p>Pruebas funcionales E2E y suites de regresión sobre APIs REST con Katalon Studio y Postman.</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">🛡️</div>
+              <div>
+                <h3>Seguridad Proactiva</h3>
+                <p>Control de acceso basado en roles (RBAC), OTP hasheado, rate limiting y sanitización estricta de esquemas.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section border-top">
+      <div class="container">
+        <div class="section-header-flex">
+          <div>
+            <div class="section-badge">Portafolio Técnico</div>
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <p class="section-subtitle">Sistemas construidos con foco en arquitectura, seguridad, bases de datos y control de calidad.</p>
+          </div>
+          
+          <!-- Filters -->
+          <div class="filter-group" id="projectFilters">
+            <button class="filter-btn active" data-filter="all">Todos (8)</button>
+            <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+            <button class="filter-btn" data-filter="qa">QA & Testing</button>
+            <button class="filter-btn" data-filter="database">Databases & NoSQL</button>
+            <button class="filter-btn" data-filter="ml">Data & ML</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          
+          <!-- PROJECT 1: Panetones URP -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-card-header">
+              <div class="project-tag">Producción Institucional · +500 Usuarios</div>
+              <h3 class="project-title">Registro Panetones (URP Bienestar)</h3>
+              <p class="project-tagline">Aplicación institucional web y móvil para captura de pedidos, asignación de stock y descuento por nómina.</p>
+            </div>
+            <div class="project-body">
+              <ul class="project-points">
+                <li>Digitalizó el flujo manual para <strong>más de 500 trabajadores y docentes</strong> de la universidad, eliminando errores de transcripción a cero.</li>
+                <li>Formulario adaptativo mobile-first accesible mediante códigos QR con validación en tiempo real.</li>
+                <li>Base de datos en Supabase (PostgreSQL) con motor de exportación consolidada a Excel para RRHH.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>React 19</span>
+                <span>TypeScript</span>
+                <span>Supabase</span>
+                <span>PostgreSQL</span>
+                <span>Tailwind CSS</span>
+                <span>Excel Engine</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/GianfrancoCaballeroM/ProyectoRegistroPanetonesURP" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>Ver Repositorio</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Mezzanine Restobar -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-card-header">
+              <div class="project-tag">Enterprise ERP & CRM · PERN</div>
+              <h3 class="project-title">Mezzanine Restobar</h3>
+              <p class="project-tagline">Plataforma empresarial de ciclo completo (landing pública + panel CRM de gestión) para restaurante en Lima.</p>
+            </div>
+            <div class="project-body">
+              <ul class="project-points">
+                <li>Diseñado e iterado durante más de 2 meses con ramas de características y validaciones formales de integración.</li>
+                <li>Pipeline de SEO técnico integral (<code>react-helmet-async</code>, sitemaps dinámicos, Search Console).</li>
+                <li>Gestor de menú dinámico (CRUD) conectado a Cloudinary, módulo de RRHH y seguimiento de clientes por LTV.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>PostgreSQL</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>React</span>
+                <span>Railway</span>
+                <span>Vercel</span>
+                <span>Cloudinary</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/GianfrancoCaballeroM/SWGCMDEM" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>Ver Repositorio</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: LidherSport QA -->
+          <article class="project-card" data-category="qa">
+            <div class="project-card-header">
+              <div class="project-tag">QA & Automated Testing</div>
+              <h3 class="project-title">LidherSport QA Suite</h3>
+              <p class="project-tagline">Suite integral de aseguramiento de calidad y pruebas automatizadas E2E y de API sobre plataforma de e-commerce.</p>
+            </div>
+            <div class="project-body">
+              <ul class="project-points">
+                <li>Diseño y ejecución de casos de prueba automatizados end-to-end (E2E) y suites de integración de API REST.</li>
+                <li>Pruebas de regresión automatizadas sobre flujos críticos de autenticación, gestión de carrito y pasarela.</li>
+                <li>Gestión del ciclo de vida de defectos con matriz de trazabilidad y 100% de reproducibilidad documentada.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>Katalon Studio</span>
+                <span>Postman</span>
+                <span>Groovy</span>
+                <span>Supabase REST API</span>
+                <span>Matriz CUS</span>
+                <span>E2E Regression</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <span class="project-meta">Suite de Pruebas & Documentación Académica</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Mezzanine NoSQL -->
+          <article class="project-card" data-category="database">
+            <div class="project-card-header">
+              <div class="project-tag">MongoDB Atlas Architecture · Repositorio Público</div>
+              <h3 class="project-title">Mezzanine NoSQL (Gestión Reservas)</h3>
+              <p class="project-tagline">Prototipo de backend de alto rendimiento demostrando 7 patrones avanzados de bases de datos NoSQL.</p>
+            </div>
+            <div class="project-body">
+              <ul class="project-points">
+                <li><strong>Capped Collections:</strong> <code>auditoria_logs</code> circular de 1 MB y max 1000 registros para escrituras veloces.</li>
+                <li><strong>TTL Indexes:</strong> Purgado automático de logs con índice <code>expires: 2592000</code> (30 días).</li>
+                <li><strong>Vistas Nativas DB:</strong> <code>v_reservas_hoy</code> calculada a nivel de base de datos con <code>$$NOW</code> y <code>$dateTrunc</code>.</li>
+                <li><strong>Triggers Atómicos:</strong> Incremento en <code>post('save')</code> y auditoría automatizada en <code>post('findOneAndUpdate')</code>.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>MongoDB Atlas</span>
+                <span>Mongoose</span>
+                <span>Express</span>
+                <span>React</span>
+                <span>JWT</span>
+                <span>Capped Collection</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/GianfrancoCaballeroM/SistemaGestionReservas" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>Ver Repositorio (Público)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: DUXCalc -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-card-header">
+              <div class="project-tag">Seguridad & HR Platform · Proyecto Colaborativo</div>
+              <h3 class="project-title">DUXCalc Payroll System</h3>
+              <p class="project-tagline">Sistema de alta seguridad para liquidación de planillas y administración de campañas en contact center.</p>
+            </div>
+            <div class="project-body">
+              <ul class="project-points">
+                <li>Recuperación segura de accesos mediante OTP hasheado con bcrypt, despacho por Nodemailer y bloqueo por fuerza bruta.</li>
+                <li>Control de acceso basado en roles (RBAC <code>ConsultarDatosSensibles</code>) aplicado a nivel de capa de datos.</li>
+                <li>Rediseño integral de interfaz aplicando las <strong>10 Heurísticas de Usabilidad de Nielsen</strong>.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Firebase Firestore</span>
+                <span>Nodemailer</span>
+                <span>bcrypt</span>
+                <span>RBAC Security</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <span class="project-meta">Rol: Frontend Developer & UI/UX Lead</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 6: Kanbix -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-card-header">
+              <div class="project-tag">Spec-Driven Development (SDD) · Equipo de 6</div>
+              <h3 class="project-title">Kanbix — Scrum & Kanban Platform</h3>
+              <p class="project-tagline">Plataforma colaborativa de gestión ágil construida bajo arquitectura limpia y contratos estrictos.</p>
+            </div>
+            <div class="project-body">
+              <ul class="project-points">
+                <li>Ciclo completo SDD: 84 requerimientos funcionales, 22 especificaciones CUS, matriz de trazabilidad y OpenAPI 3.x.</li>
+                <li>Diseño de API riguroso: prefijo <code>/api/v1</code>, validación de esquemas con Pydantic y respuestas HTTP 422 estándar.</li>
+                <li>Clean Architecture en capas: Controlador → Caso de Uso → Repositorio → Entidad de Dominio.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>React (TypeScript)</span>
+                <span>FastAPI</span>
+                <span>Python</span>
+                <span>MongoDB Atlas</span>
+                <span>Beanie ODM</span>
+                <span>Clean Architecture</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <span class="project-meta">Rol: Fullstack Developer (Módulo Tablero Kanban)</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 7: SNP Pensions ML -->
+          <article class="project-card" data-category="ml">
+            <div class="project-card-header">
+              <div class="project-tag">Machine Learning & Analytics</div>
+              <h3 class="project-title">SNP Pensions Predictive Pipeline</h3>
+              <p class="project-tagline">Pipeline de aprendizaje supervisado sobre más de 200,000 registros del sistema nacional de pensiones del Perú.</p>
+            </div>
+            <div class="project-body">
+              <ul class="project-points">
+                <li>Regresión predictiva sobre número de aportes mediante modelos Gradient Boosting Regressor optimizados.</li>
+                <li>Clasificación de aportantes mediante SVM con kernel RBF y redes neuronales Multi-Layer Perceptron (MLP).</li>
+                <li>Backend en FastAPI exponiendo endpoints de inferencia en tiempo real integrados con frontend interactivo en FastHTML.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>Python</span>
+                <span>Scikit-learn</span>
+                <span>Pandas</span>
+                <span>FastAPI</span>
+                <span>FastHTML</span>
+                <span>Gradient Boosting</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <span class="project-meta">Pipeline Analítico & Modelo Predictivo</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 8: NeuroScan ID -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-card-header">
+              <div class="project-tag">B2B SaaS Landing Page · Pitch IBM</div>
+              <h3 class="project-title">NeuroScan ID</h3>
+              <p class="project-tagline">Landing comercial inmersiva para producto de análisis biométrico psicoemocional con captura de leads en vivo.</p>
+            </div>
+            <div class="project-body">
+              <ul class="project-points">
+                <li>Integración con Resend API para despacho automatizado de correos de captación en tiempo real durante el pitch final.</li>
+                <li>17 requerimientos funcionales documentados rigurosamente antes del desarrollo.</li>
+                <li>Microinteracciones y animaciones de alta fidelidad con Framer Motion para experiencia B2B corporativa.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>React</span>
+                <span>Vite</span>
+                <span>Tailwind CSS</span>
+                <span>Framer Motion</span>
+                <span>Supabase</span>
+                <span>Resend API</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/GianfrancoCaballeroM/NSID" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>Ver Repositorio</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK SECTION -->
+    <section id="stack" class="section border-top">
+      <div class="container">
+        <div class="section-badge">Habilidades Técnicas</div>
+        <h2 class="section-title">Stack Tecnológico & Dominio</h2>
+        <p class="section-subtitle">Tecnologías y herramientas aplicadas en proyectos de arquitectura, backend, datos y control de calidad.</p>
+
+        <div class="stack-grid">
+          
+          <div class="stack-category-card">
+            <div class="category-header">
+              <span class="cat-icon">⚙️</span>
+              <h3>Lenguajes & Core</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">JavaScript (ES6+)</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Python</span>
+              <span class="chip">Java</span>
+              <span class="chip">C#</span>
+              <span class="chip">PHP</span>
+              <span class="chip">SQL (ANSI)</span>
+              <span class="chip">HTML5 & CSS3</span>
+            </div>
+          </div>
+
+          <div class="stack-category-card">
+            <div class="category-header">
+              <span class="cat-icon">🎨</span>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">React 18 / 19</span>
+              <span class="chip">Vite</span>
+              <span class="chip">Tailwind CSS</span>
+              <span class="chip">Framer Motion</span>
+              <span class="chip">Recharts</span>
+              <span class="chip">Responsive Web</span>
+            </div>
+          </div>
+
+          <div class="stack-category-card">
+            <div class="category-header">
+              <span class="cat-icon">🔌</span>
+              <h3>Backend & Cloud</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">Node.js</span>
+              <span class="chip">Express</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">Firebase</span>
+              <span class="chip">Railway</span>
+              <span class="chip">Vercel</span>
+            </div>
+          </div>
+
+          <div class="stack-category-card">
+            <div class="category-header">
+              <span class="cat-icon">🗄️</span>
+              <h3>Bases de Datos</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">PostgreSQL 17</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">MongoDB Atlas</span>
+              <span class="chip">Microsoft SQL Server</span>
+              <span class="chip">Mongoose / Beanie</span>
+              <span class="chip">Capped Collections</span>
+            </div>
+          </div>
+
+          <div class="stack-category-card">
+            <div class="category-header">
+              <span class="cat-icon">🧪</span>
+              <h3>QA, Testing & Calidad</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">Katalon Studio</span>
+              <span class="chip">Postman</span>
+              <span class="chip">Pruebas E2E Automatizadas</span>
+              <span class="chip">Pruebas de Regresión</span>
+              <span class="chip">Groovy</span>
+              <span class="chip">Matrices de Trazabilidad</span>
+            </div>
+          </div>
+
+          <div class="stack-category-card">
+            <div class="category-header">
+              <span class="cat-icon">🛠️</span>
+              <h3>Herramientas & Métodos</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">Git & GitHub</span>
+              <span class="chip">Scrum & Sprints</span>
+              <span class="chip">ClickUp</span>
+              <span class="chip">Cloudinary</span>
+              <span class="chip">Resend API</span>
+              <span class="chip">UiPath</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PRINCIPLES SECTION -->
+    <section id="principles" class="section border-top">
+      <div class="container">
+        <div class="section-badge">Criterio Profesional</div>
+        <h2 class="section-title">Principios de Ingeniería</h2>
+        <p class="section-subtitle">Estándares no negociables que guían cada línea de código y decisión arquitectónica.</p>
+
+        <div class="principles-grid">
+          
+          <div class="principle-card">
+            <div class="principle-num">01</div>
+            <h3>AI-Orchestrated Workflow</h3>
+            <p>La arquitectura, los esquemas de bases de datos, las heurísticas de usabilidad y los contratos de API son dirigidos por criterio humano. Las herramientas de IA ejecutan iteraciones controladas y aceleradas.</p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-num">02</div>
+            <h3>Spec-Driven Development (SDD)</h3>
+            <p>Los contratos OpenAPI, flujos BPMN y especificaciones CUS siempre preceden a la codificación. No se escribe lógica sin requerimientos estructurados y validados.</p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-num">03</div>
+            <h3>Security by Design</h3>
+            <p>Control de accesos basado en roles (RBAC), tokens OTP hasheados, mitigación de ataques de fuerza bruta y rate-limiting integrados de forma proactiva, nunca reactiva.</p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-num">04</div>
+            <h3>Causa Raíz sobre Parche Visual</h3>
+            <p>Las anomalías se investigan en su origen de base de datos o capa arquitectónica. Los parches cosméticos en el cliente no son soluciones de ingeniería.</p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-num">05</div>
+            <h3>UI/UX por Heurísticas</h3>
+            <p>Aplicación de las 10 Heurísticas de Usabilidad de Nielsen en cada pantalla, garantizando prevención de errores, visibilidad de estado y consistencia ergonómica.</p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-num">06</div>
+            <h3>QA & Automatización Sistemática</h3>
+            <p>La calidad no es un evento final: se respalda con suites de pruebas reproducibles, aserciones automatizadas de API y cobertura de casos críticos.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="section border-top">
+      <div class="container">
+        <div class="section-badge">Acreditaciones</div>
+        <h2 class="section-title">Certificaciones & Formación</h2>
+
+        <div class="cert-grid">
+          
+          <div class="cert-card">
+            <div class="cert-icon">🇬🇧</div>
+            <div class="cert-content">
+              <span class="cert-institution">EF Standard English Test (EF SET)</span>
+              <h3 class="cert-title">C1 Advanced English Certificate</h3>
+              <p class="cert-desc">Puntaje oficial 62/100 (C1 Avanzado). Capacidad demostrada para comunicación técnica y profesional fluida en inglés internacional.</p>
+              <a href="https://cert.efset.org/es/tTJmH3" target="_blank" rel="noopener noreferrer" class="cert-link">
+                <span>Verificar Certificado Oficial</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon">📊</div>
+            <div class="cert-content">
+              <span class="cert-institution">UPC & Becas Fundación Romero</span>
+              <h3 class="cert-title">Excel Básico e Intermedio</h3>
+              <p class="cert-desc">Fórmulas intermedias, tablas dinámicas, automatización de análisis de datos y procesamiento de nóminas.</p>
+              <span class="cert-badge">Código: 4bpvnorFhP</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon">🎓</div>
+            <div class="cert-content">
+              <span class="cert-institution">Universidad Ricardo Palma</span>
+              <h3 class="cert-title">Ingeniería Informática</h3>
+              <p class="cert-desc">Formación de pregrado en sistemas distribuidos, arquitectura de software, bases de datos relacionales y no relacionales, redes y testing.</p>
+              <span class="cert-badge">Lima, Perú</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section border-top">
+      <div class="container contact-container">
+        <div class="contact-box">
+          <div class="section-badge">Canales Directos</div>
+          <h2 class="section-title">Conectemos para nuevas oportunidades</h2>
+          <p class="contact-lead">
+            Estoy disponible para <strong>prácticas preprofesionales</strong>, proyectos de desarrollo de software, 
+            equipos multidisciplinarios (como Formula Student) y roles de ingeniería fullstack o QA.
+          </p>
+
+          <div class="contact-cards-grid">
+            
+            <a href="mailto:gianfrancocaballeromedina@hotmail.com" class="contact-method-card">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-type">Correo Electrónico</span>
+                <span class="contact-val">gianfrancocaballeromedina@hotmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/gianfranco-caballero-medina-62459643a/" target="_blank" rel="noopener noreferrer" class="contact-method-card">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-type">LinkedIn Profesional</span>
+                <span class="contact-val">/in/gianfranco-caballero-medina</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/GianfrancoCaballeroM" target="_blank" rel="noopener noreferrer" class="contact-method-card">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-type">GitHub Repositorio</span>
+                <span class="contact-val">@GianfrancoCaballeroM</span>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="contact-action-row">
+            <a href="mailto:gianfrancocaballeromedina@hotmail.com" class="btn btn-primary btn-lg" id="btn-write-email">
+              Enviar Mensaje Directo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>
-        Diseñado y construido por <strong>Gianfranco Caballero Medina</strong> · 
-        <span class="footer-mono">HTML · CSS · JavaScript</span>
-      </p>
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-name">Gianfranco Caballero Medina</span>
+        <span class="footer-sub">Ingeniería Informática · Universidad Ricardo Palma</span>
+      </div>
+      <div class="footer-right">
+        <span>Diseñado bajo principios de Clean Architecture & Usabilidad</span>
+        <span class="footer-year">© 2026</span>
+      </div>
     </div>
   </footer>
 
